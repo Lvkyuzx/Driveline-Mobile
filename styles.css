@@ -934,3 +934,98 @@ h1 {
     font-size: 1.05rem;
   }
 }
+
+/* Logo image and softer gray page surfaces */
+.brand-mark {
+  width: clamp(78px, 12vw, 132px);
+  height: clamp(58px, 8vw, 86px);
+  overflow: hidden;
+  padding: 0;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+body,
+.section.intro,
+.services,
+.process,
+.contact {
+  background: #242424;
+  color: #f4f4f4;
+}
+
+.intro p:last-child,
+.service-card p,
+.steps p,
+.contact-copy p,
+.form-note {
+  color: #c9c9c9;
+}
+
+.service-card,
+.quote-form,
+.footer {
+  background: #303030;
+  border-color: #464646;
+  color: #f4f4f4;
+}
+
+.service-card {
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+}
+
+.contact-methods a {
+  border-bottom-color: #464646;
+  color: #f4f4f4;
+}
+
+.feature-band,
+.review-band {
+  background: #121212;
+}
+
+label {
+  color: #f4f4f4;
+}
+
+input,
+textarea {
+  background: #1f1f1f;
+  border-color: #5a5a5a;
+  color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a8a8a8;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: rgba(249, 115, 22, 0.3);
+  border-color: var(--orange);
+}
+
+.footer {
+  border-top-color: #464646;
+}
+
+.footer span {
+  color: #c9c9c9;
+}
+
+@media (max-width: 560px) {
+  .brand-mark {
+    width: 74px;
+    height: 56px;
+  }
+
+  .brand strong {
+    max-width: 160px;
+  }
+}
